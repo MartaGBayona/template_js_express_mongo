@@ -4,6 +4,8 @@ Es una base de datos no relacional. Las tablas las llamamos colecciones y a cada
 En código podemos exigir algunos datos. 
 Cuando decimos que una aplicacion es escalable hablamos de aplicaciones que crecen mucho hacia arriba y a los lados. Cuando hablamos de escalabilidad hacia arriba (alojada en un servidor, una maquina con memoria, cpu...) mejoramos la máquina. La escalabilidad horizontal redistribuye la carga de nuestra aplicación en distinas aplicaciones clon, y el balanceador es el encargado de redirigir las peticiones para desahogar el sistema.
 
+Importamos dependencias en la parte superior de los archivos, primero las librerias y dependencias
+
 
 ``` bash
 $ npm init --yes
@@ -26,3 +28,14 @@ $ npm i dotenv -E
     "type": "module"
 }
 ```
+
+instalamos mongo desde terminal:
+
+``` bash
+ docker run -d -p 27017:27017 --name mongo -v mongo_data:/data/db -e MONGO_INITDB_ROOT_USERNAME=root -e MONGO_INITDB_ROOT_PASSWORD=root mongo:latest
+ ```
+
+``` bash
+npm i mongoose
+```
+
