@@ -38,4 +38,19 @@ instalamos mongo desde terminal:
 ``` bash
 npm i mongoose
 ```
+``` bash
+npm i bcrypt
+```
 
+``` txt
+creamos modelos
+```
+``` txt
+creamos controlador
+```
+``` txt
+creamos ruta
+```
+``` txt
+comprobamos la ruta
+```
